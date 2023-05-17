@@ -1,7 +1,137 @@
-<style>
-  /* TO DO */
-</style>
 <!-- File created 9 pm on 5/16/23 -->
-<p>
-  Hello
-</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .text {
+      /* the format for all default text */
+      color: #012d5a;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: bold;
+      text-align: center;
+      margin: 0;
+    }
+
+    .topNav {
+      background-color: #012d5a;
+      overflow: hidden;
+      width: 100%;
+      margin: 0;
+    }
+
+    .topNav button {
+      float: right;
+      text-align: center;
+      background-color: transparent;
+      color: white;
+      border: none;
+      background: none;
+      height: 50px;
+      width: 100px;
+      right: inherit;
+      padding: 10px 10px;
+    }
+
+    .topNav button:hover {
+      color: #f0bf4c;
+      border-width: 0px 0px 5px 0px;
+      border-color: #f0bf4c;
+      border-style: solid;
+    }
+
+    /* Adds a circle border to the image of myself I added. */
+    img {
+      border-radius: 50%;
+      max-width: 300px;
+      max-height: 300px;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+      border-width: 1px 0px 0px 0px;
+      border-color: #012d5a;
+
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #f0bf4c;
+      border-radius: 10px;
+    }
+
+    .topMessage {
+      background-color: grey;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class=topNav>
+
+    <button>
+      TIMELINE
+    </button>
+
+    <button>
+      CONTACTS
+    </button>
+
+    <button>
+      ABOUT
+    </button>
+
+  </div>
+
+  <section class="topMessage">
+
+    <p class="text">
+      Hi Levin! You're a funny little guy.
+    </p>
+
+  </section>
+
+  <section style="display: flex; height: 1000px; justify-content: center; padding: 20px;">
+
+    <img src="portrait.jpg">
+
+    <div style="inline-size: 500px; padding: 20px;">
+
+      <h1>
+        Jonathan Pantojas
+      </h1>
+
+      <p>
+        So basically I would make a whole paragraph here so that a future employer knows what I'm about and such lol.
+        Right now this is a text holder though because it's getting pretty late and I just want to test and see how
+        this works. This isn't too bad though I thought there would be much more to learn about css and html but my
+        experience with cs3733 kinda covered all this information. It's just a lot of trial and error and using
+        w3school and stackoverflow and chatgpt. I'm kinda liking UI a little too much lmao. I have to refocus and make
+        sure my attention goes more towards cybersecurity.
+      </p>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
