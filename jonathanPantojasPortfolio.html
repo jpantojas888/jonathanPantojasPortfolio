@@ -5,8 +5,56 @@
 <head>
 
   <style>
+
+    header { 
+      width: 100%;
+      height: 50px;
+      overflow: hidden;
+      margin: 0;
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      background-color: rgb(33, 31, 31);
+      z-index: 1;
+      align-items: center;
+      justify-content: right;
+      display: flex;
+    }
+
+    header button {
+      float: right;
+      text-align: center;
+      background-color: rgb(33, 31, 31);
+      color: white;
+      border: none;
+      background: none;
+      height: 40px;
+      width: 100px;
+      right: inherit;
+      margin-right: 5px;
+    }
+
+    header button:hover {
+      color: blue;
+      border-width: 0px 0px 2px 0px;
+      border-color: blue;
+      border-style: solid;
+    }
+
+    header:after{
+      content: "";
+      position: absolute;
+      left: 5%;
+      bottom: 0;
+      height: 1px;
+      width: 90%; 
+      border-bottom:1px solid white;
+    }
+
     body {
       margin: 0;
+      margin-top: 50px !important;
       padding: 0;
       background-color: rgb(33, 31, 31);
     }
@@ -16,7 +64,12 @@
       bottom:0;
       left:0;
       right:0;
-      height:50px !important ; 
+      height:50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index : 1;
+      background-color: rgb(33, 31, 31);
     }
 
     footer a{
@@ -28,6 +81,16 @@
       font-family: 'Courier New', Courier, monospace;
     }
 
+    footer:before{
+      content: "";
+      position: absolute;
+      left: 5%;
+      top: 0;
+      height: 1px;
+      width: 90%; 
+      border-top:1px solid white;
+    }
+
     .text {
       /* the format for all default text */
       color: white;
@@ -36,32 +99,6 @@
       font-style: bold;
       text-align: left;
       margin: 0;
-    }
-
-    .topNav { 
-      overflow: hidden;
-      width: 100%;
-      margin: 0;
-    }
-
-    .topNav button {
-      float: right;
-      text-align: center;
-      background-color: transparent;
-      color: white;
-      border: none;
-      background: none;
-      height: 50px;
-      width: 100px;
-      right: inherit;
-      margin-right: 5px;
-    }
-
-    .topNav button:hover {
-      color: blue;
-      border-width: 0px 0px 2px 0px;
-      border-color: blue;
-      border-style: solid;
     }
 
     /* Adds a circle border to the image of myself I added. */
@@ -87,15 +124,31 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
+
+    .topMessage:after{
+      content: "";
+      position: absolute;
+      left: 5%;
+      bottom: 0;
+      height: 1px;
+      width: 90%; 
+      border-top:1px solid white;
+    }
+
   </style>
 
 </head>
 
 <body>
 
-  <div class=topNav>
+  <header>
 
+    <button>
+      ABOUT
+    </button>
+    
     <button>
       TIMELINE
     </button>
@@ -104,11 +157,7 @@
       CONTACT ME
     </button>
 
-    <button>
-      ABOUT
-    </button>
-
-  </div>
+  </header>
 
   <section class="topMessage">
 
@@ -129,19 +178,23 @@
       </h1>
 
       <p class = "text">
-        So basically I would make a whole paragraph here so that a future employer knows what I'm about and such lol.
-        Right now this is a text holder though because it's getting pretty late and I just want to test and see how
-        this works. This isn't too bad though I thought there would be much more to learn about css and html but my
-        experience with cs3733 kinda covered all this information. It's just a lot of trial and error and using
-        w3school and stackoverflow and chatgpt. I'm kinda liking UI a little too much lmao. I have to refocus and make
-        sure my attention goes more towards cybersecurity.
+        Hi! My name is Jonathan Pantojas, and I am currently in my junior year at 
+        <a href = "https://www.wpi.edu/" target = "_blank"; 
+        style = "text-decoration: none; color: blue">
+          Worcester Polytechnic Institute
+        </a>
+        . I plan to graduate in the spring of 2025 with a degree in computer science and a 
+        concentration in cybersecurity. Just because I plan to work in cybersecurity doesn't mean
+        I can't have a little fun with website building though! My two goals for this website are 
+        to learn more HTML and CSS through project based learning and inform future employers of my 
+        skills and past experiences. 
       </p>
 
     </div>
 
   </section>
 
-  <footer class = "topMessage" style = "border-top: 1px solid white; "> 
+  <footer> 
     <a href = "https://www.instagram.com/jon_wpi/" target = "_blank">
       INSTAGRAM
     </a>
