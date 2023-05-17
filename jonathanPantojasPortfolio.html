@@ -8,20 +8,37 @@
     body {
       margin: 0;
       padding: 0;
+      background-color: rgb(33, 31, 31);
+    }
+
+    footer{
+      position:fixed;
+      bottom:0;
+      left:0;
+      right:0;
+      height:50px !important ; 
+    }
+
+    footer a{
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
     }
 
     .text {
       /* the format for all default text */
-      color: #012d5a;
+      color: white;
       font-size: 20px;
       font-family: 'Times New Roman', Times, serif;
       font-style: bold;
-      text-align: center;
+      text-align: left;
       margin: 0;
     }
 
-    .topNav {
-      background-color: #012d5a;
+    .topNav { 
       overflow: hidden;
       width: 100%;
       margin: 0;
@@ -37,13 +54,13 @@
       height: 50px;
       width: 100px;
       right: inherit;
-      padding: 10px 10px;
+      margin-right: 5px;
     }
 
     .topNav button:hover {
-      color: #f0bf4c;
-      border-width: 0px 0px 5px 0px;
-      border-color: #f0bf4c;
+      color: blue;
+      border-width: 0px 0px 2px 0px;
+      border-color: blue;
       border-style: solid;
     }
 
@@ -54,26 +71,18 @@
       max-height: 300px;
     }
 
-    /* width */
     ::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: transparent;
-      border-width: 1px 0px 0px 0px;
-      border-color: #012d5a;
-
-
+      width: 15px;
     }
 
     ::-webkit-scrollbar-thumb {
-      background: #f0bf4c;
+      border: 4px solid rgba(0, 0, 0, 0);
+      background-clip: padding-box;
       border-radius: 10px;
+      background-color: #AAAAAA;
     }
 
     .topMessage {
-      background-color: grey;
       height: 80px;
       display: flex;
       justify-content: center;
@@ -92,7 +101,7 @@
     </button>
 
     <button>
-      CONTACTS
+      CONTACT ME
     </button>
 
     <button>
@@ -115,11 +124,11 @@
 
     <div style="inline-size: 500px; padding: 20px;">
 
-      <h1>
+      <h1 class = "text">
         Jonathan Pantojas
       </h1>
 
-      <p>
+      <p class = "text">
         So basically I would make a whole paragraph here so that a future employer knows what I'm about and such lol.
         Right now this is a text holder though because it's getting pretty late and I just want to test and see how
         this works. This isn't too bad though I thought there would be much more to learn about css and html but my
@@ -131,6 +140,18 @@
     </div>
 
   </section>
+
+  <footer class = "topMessage" style = "border-top: 1px solid white; "> 
+    <a href = "https://www.instagram.com/jon_wpi/" target = "_blank">
+      INSTAGRAM
+    </a>
+    <a href = "https://github.com/jpantojas888" target = "_blank">
+      GITHUB
+    </a>
+    <a href = "https://linkedin.com/in/jonathan-pantojas/" target = "_blank">
+      LINKEDIN
+    </a>
+  </footer>
 
 </body>
 
