@@ -1,0 +1,45 @@
+header { 
+  background-color: white;
+}
+
+header button {
+  background-color: white;
+  color: black;
+}
+
+header button:after {
+  background: black;
+}
+
+header:after{
+  border-bottom:1px solid black;
+}
+
+body {
+  background-color: white;
+}
+
+footer{
+  background-color: white;
+}
+
+footer a{
+  color: black;
+}
+
+footer:before{
+  border-top:1px solid black;
+}
+
+.text {
+  color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid white;
+  background-color: black;
+}
+
+.topMessage:after{
+  border-top:1px solid black;
+}

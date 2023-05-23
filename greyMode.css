@@ -1,0 +1,45 @@
+header { 
+  background-color: rgb(33, 31, 31);
+}
+
+header button {
+  background-color: rgb(33, 31, 31);
+  color: white;
+}
+
+header button:after {
+  background: white;
+}
+
+header:after{
+  border-bottom:1px solid white;
+}
+
+body {
+  background-color: rgb(33, 31, 31);
+}
+
+footer{
+  background-color: rgb(33, 31, 31);
+}
+
+footer a{
+  color: white;
+}
+
+footer:before{
+  border-top:1px solid white;
+}
+
+.text {
+  color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-color: #AAAAAA;
+}
+
+.topMessage:after{
+  border-top:1px solid white;
+}

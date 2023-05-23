@@ -4,23 +4,25 @@
 
 <head>
 
+  <title>Jonathan Pantojas Online Portfolio - About/Home </title>
+  <link rel="stylesheet" href="lightMode.css" id= "lightMode">
+  <link rel="stylesheet" href="greyMode.css" id = "greyMode">
+  <script src = "listener.js"></script>
   <style>
-
     @font-face {
       font-family: montserrat;
       src: url(Montserrat-Medium.ttf);
     }
 
-    header { 
+    header {
       width: 100%;
       height: 50px;
       overflow: hidden;
       margin: 0;
-      position:fixed;
-      top:0;
-      left:0;
-      right:0;
-      background-color: rgb(33, 31, 31);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 1;
       align-items: center;
       justify-content: right;
@@ -30,8 +32,6 @@
     header button {
       float: right;
       text-align: center;
-      background-color: rgb(33, 31, 31);
-      color: white;
       border: none;
       background: none;
       height: 40px;
@@ -42,52 +42,52 @@
       position: relative;
     }
 
+    header button:hover {
+      cursor: pointer;
+    }
+
     header button:after {
       content: '';
       height: 3px;
       width: 0;
-      background: white;
       position: absolute;
       left: 0;
       bottom: 0;
       transition: 0.3s;
     }
+
     header button:hover:after {
       width: 100%;
     }
 
-    header:after{
+    header:after {
       content: "";
       position: absolute;
       left: 1%;
       bottom: 0;
       height: 1px;
-      width: 98%; 
-      border-bottom:1px solid white;
+      width: 99%;
     }
 
     body {
       margin: 0;
       margin-top: 50px !important;
       padding: 0;
-      background-color: rgb(33, 31, 31);
     }
 
-    footer{
-      position:fixed;
-      bottom:0;
-      left:0;
-      right:0;
-      height:50px;
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index : 1;
-      background-color: rgb(33, 31, 31);
+      z-index: 1;
     }
 
-    footer a{
-      color: white;
+    footer a {
       font-size: 15px;
       text-align: center;
       padding: 10px;
@@ -95,24 +95,13 @@
       font-family: montserrat;
     }
 
-    footer:before{
+    footer:before {
       content: "";
       position: absolute;
       left: 1%;
       top: 0;
       height: 1px;
-      width: 98%; 
-      border-top:1px solid white;
-    }
-
-    .text {
-      /* the format for all default text */
-      color: white;
-      font-size: 20px;
-      font-family: montserrat;
-      font-style: bold;
-      text-align: left;
-      margin: 0;
+      width: 99%;
     }
 
     /* Adds a circle border to the image of myself I added. */
@@ -122,15 +111,22 @@
       max-height: 300px;
     }
 
+    .text {
+      /* the format for all default text */
+      font-size: 20px;
+      font-family: montserrat;
+      font-style: bold;
+      text-align: left;
+      margin: 0;
+    }
+
     ::-webkit-scrollbar {
       width: 15px;
     }
 
     ::-webkit-scrollbar-thumb {
-      border: 4px solid rgba(0, 0, 0, 0);
       background-clip: padding-box;
       border-radius: 10px;
-      background-color: #AAAAAA;
     }
 
     .topMessage {
@@ -141,16 +137,14 @@
       position: relative;
     }
 
-    .topMessage:after{
+    .topMessage:after {
       content: "";
       position: absolute;
       left: 1%;
       bottom: 0;
       height: 1px;
-      width: 98%; 
-      border-top:1px solid white;
+      width: 99%;
     }
-
   </style>
 
 </head>
@@ -162,8 +156,8 @@
     <button>
       ABOUT
     </button>
-    
-    <button>
+
+    <button onclick = "switchModes()">
       TIMELINE
     </button>
 
@@ -187,35 +181,34 @@
 
     <div style="inline-size: 500px; padding: 20px;">
 
-      <h1 class = "text">
+      <h1 class="text">
         Jonathan Pantojas
       </h1>
 
-      <p class = "text">
-        Hi! My name is Jonathan Pantojas, and I am currently in my junior year at 
-        <a href = "https://www.wpi.edu/" target = "_blank"; 
-        style = "text-decoration: none; color: blue">
+      <p class="text">
+        Hi! My name is Jonathan Pantojas, and I am currently in my junior year at
+        <a href="https://www.wpi.edu/" target="_blank" ; style="text-decoration: none; color: blue">
           Worcester Polytechnic Institute
         </a>
-        . I plan to graduate in the spring of 2025 with a degree in computer science and a 
+        . I plan to graduate in the spring of 2025 with a degree in computer science and a
         concentration in cybersecurity. Just because I plan to work in cybersecurity doesn't mean
-        I can't have a little fun with website building though! My two goals for this website are 
-        to learn more HTML and CSS through project based learning and inform future employers of my 
-        skills and past experiences. 
+        I can't have a little fun with website building though! My two goals for this website are
+        to learn more HTML and CSS through project based learning and inform future employers of my
+        skills and past experiences.
       </p>
 
     </div>
 
   </section>
 
-  <footer> 
-    <a href = "https://www.instagram.com/jon_wpi/" target = "_blank">
+  <footer>
+    <a href="https://www.instagram.com/jon_wpi/" target="_blank">
       INSTAGRAM
     </a>
-    <a href = "https://github.com/jpantojas888" target = "_blank">
+    <a href="https://github.com/jpantojas888" target="_blank">
       GITHUB
     </a>
-    <a href = "https://linkedin.com/in/jonathan-pantojas/" target = "_blank">
+    <a href="https://linkedin.com/in/jonathan-pantojas/" target="_blank">
       LINKEDIN
     </a>
   </footer>
